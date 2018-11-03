@@ -1,8 +1,8 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-<h1>{{hello}}<sup>&#42;</sup></h1>
-  <p><sup>&#42;</sup>Bonjour et bienvenue en <span class="bonjour-langue">{{helloLanguage}}</span></p>
+<h1>{{hello.content}}<sup>&#42;</sup></h1>
+  <p><sup>&#42;</sup>Bonjour et bienvenue en <span class="bonjour-langue">{{hello.language}}</span></p>
   <h3>Présentation : </h3>
   <p>Ce site a pour pour but essentiellement de présenter mon parcours ainsi que mes comp&eacute;tences.</p>
   <p>Toutes les pages de ce site ont &eacute;t&eacute; &eacute;crites en HTML5/PHP7 et mises en formes en CSS3 en
