@@ -1,0 +1,289 @@
+body {
+    font-family: 'Lora', sans-serif;
+    background: #FFF;
+    color: black;
+    width: 100%;
+    margin: 0px;
+}
+
+.menu {
+    font-size: 24px;
+}
+
+.menu > ul > li {
+    padding-top: 6px;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.menu > ul > li > a {
+    color:#0d5b12;
+    text-decoration: none;
+    transition: all 1.5s ease;
+}
+
+.menu a:hover {
+    color: #fff;
+    background-color: #0d5b12;
+    text-decoration: none;
+    transition: all 1.5s ease;
+}
+.menu li.show a.nav-link.dropdown-toggle{
+    color: #fff;
+    background-color: #0d5b12;
+}
+
+.corps a {
+    color: #0d5b12;
+    text-decoration: underline;
+}
+
+.corps {
+    box-shadow: 4px 4px 5px #CCC;
+    background: #fff;
+    color: #474747;
+    padding: 70px 10px 30px 10px;
+}
+footer{
+    margin-top: 24px;
+}
+#bottom-footer {
+    font-size: 14px;
+}
+#bottom-footer a{
+    color:#474747;
+    font-size: 14px;
+}
+
+#bottom-footer .bottom-footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#bottom-footer .copyright {
+    text-align: left;
+}
+
+#bottom-footer .site-info {
+    text-align: right;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    color: #0d5b12;
+    font-size: xx-large;
+    text-align: center;
+    border-bottom: 1px solid #0d5b12;
+}
+
+h2 {
+    width: auto;
+    color: #0d5b12;
+    font-size: x-large;
+    text-align: center;
+}
+
+h2.parcours_titres {
+    border-bottom: 1px solid #88ea8e;
+}
+
+.gras {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.error {
+    color: #FF4110;
+}
+
+.contact p:last-child {
+    text-align: center;
+}
+
+.contact input[type="submit"] {
+    padding: 5px;
+}
+
+form.contact, form.genformcontact {
+    width: 400px;
+    margin: auto;
+}
+
+form.contact input[type="text"], form.contact input[type="email"], form.contact textarea {
+    width: 80%;
+}
+
+form.genformcontact input[type="text"], form.genformcontact input[type="email"], form.genformcontact textarea {
+    width: 60%;
+}
+
+input[type="text"], input[type="email"], textarea {
+    padding: 12px;
+    margin: 0px;
+    outline: none;
+    border-top: 1px white solid;
+    border-right: 1px white solid;
+    border-bottom: none;
+    border-left: 1px white solid;
+    background-color: #F0F0F0;
+}
+
+input[type="number"] {
+    width: 50px;
+    padding: 2px;
+    outline: none;
+    border: 1px white solid;
+    background-color: #F0F0F0;
+}
+
+form.contact textarea {
+    width: 80%;
+    min-height: 60px;
+    max-height: 300px;
+    resize: vertical;
+    border: 1px white solid;
+}
+
+input[type="submit"] {
+    outline: none;
+    padding: 4px;
+    margin: 6px;
+    color: white;
+    background-color: #0062cc;
+    border: 1px white solid;
+    border-radius: 8px;
+}
+
+input[type="submit"]:hover {
+    color: white;
+    border: 1px white solid;
+    background-color: #0069d9;
+}
+
+.startgame, .stopgame {
+    width: 200px;
+    padding: 4px;
+    margin: 6px;
+    color: white;
+    cursor: pointer;
+    background-color: #5C7FBF;
+    border: 1px white solid;
+    border-radius: 8px;
+}
+
+.choice {
+    cursor: pointer;
+    display: inline-block;
+    padding: 6px;
+    margin: 6px 24px;
+    border: 1px solid #00A;
+}
+
+#resultat, #erreur {
+    width: 300px;
+    max-height: 200px;
+    overflow: auto;
+    margin: auto;
+}
+
+.changeform {
+    outline: none;
+    color: #565656;
+    border: 1px #565656 solid;
+    background-color: #FFFFFF;
+}
+
+.changeform:hover {
+    outline: none;
+    color: black;
+    border: 1px black solid;
+    background-color: #EFEFEF;
+}
+
+#reponseform {
+    background-color: white;
+    color: black;
+    width: 750px;
+    min-height: 300px;
+    resize: vertical;
+    overflow: auto;
+    margin: auto;
+}
+
+label {
+    display: block;
+    float: left;
+    width: 250px;
+}
+
+.exp-title {
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.list-experiences {
+    padding: 0px 0px 20px 0px;
+}
+
+.experience-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.experience-item:hover {
+    background-color: rgba(180, 200, 180, 0.3);
+}
+
+/* responsive design taille moyenne*/
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+    .corps {
+        padding-top: 30px;
+    }
+}
+
+/* responsive design petite taille */
+@media screen and (max-width: 768px) {
+    .corps {
+        padding-top: 30px;
+    }
+
+    h1 {
+        font-size: x-large;
+    }
+
+    table tr + tr td:first-child {
+        max-width: 30px;
+    }
+}
+
+/* Impression */
+@media print {
+    body {
+        width: auto;
+    }
+
+    header, footer, a, h1, h3 {
+        display: none;
+    }
+
+    h2 {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .corps {
+        margin: 0px;
+    }
+
+    table {
+        border-spacing: 0px;
+        position: fixed;
+        top: 0px;
+    }
+}
