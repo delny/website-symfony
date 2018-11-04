@@ -1,7 +1,7 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-<h1>{{hello.content}}<sup>&#42;</sup></h1>
+<h1>{{hello.content | raw}}<sup>&#42;</sup></h1>
   <p><sup>&#42;</sup>Bonjour et bienvenue en <span class="bonjour-langue">{{hello.language}}</span></p>
   <h3>Présentation : </h3>
   <p>Ce site a pour pour but essentiellement de présenter mon parcours ainsi que mes comp&eacute;tences.</p>
@@ -11,7 +11,7 @@
   <p style="color:#FF1212;">Pour une navigation optimale sur ce site, je vous invite à mettre à jour votre navigateur
     Internet Explorer.</p>
   <![endif]-->
-  <a href="page-parcours.html">Voir mon parcours</a>
+  <a href="{{path('app_page_career')}}">Voir mon parcours</a>
   <ul id="mylistupdate" style="display: none;">
     <li>Mars 2017 : Mise à jour design, parcours et refonte du site en mod&egrave;le <a
               href="https://fr.wikipedia.org/wiki/Mod%C3%A8le-vue-contr%C3%B4leur" target="_blank">MVC</a></li>

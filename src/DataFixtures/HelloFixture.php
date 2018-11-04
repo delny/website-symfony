@@ -93,8 +93,7 @@ class HelloFixture extends Fixture
             ],
             
         ];
-        foreach($datas as $data)
-        {
+        foreach ($datas as $data) {
             $hello = new Hello();
             $hello->setContent($data['content'])
             ->setLanguage($data['language']);
